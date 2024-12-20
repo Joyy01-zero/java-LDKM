@@ -1,0 +1,23 @@
+/* Pastikan gambar sesuai ukuran kolom */
+.img-fluid {
+    width: 100%; /* Maksimalkan gambar dalam kolom */
+    height: auto; /* Proporsi gambar tetap */
+    object-fit: cover; /* Memastikan gambar rapi dan sesuai wadah */
+}
+
+/* Mengatur kolom agar rapi */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Biar nggak berantakan saat ukuran kecil */
+    gap: 10px; /* Beri jarak antar kolom */
+}
+
+.col-md-3, .col-md-12 {
+    padding: 5px; /* Beri ruang dalam kolom */
+    box-sizing: border-box; /* Termasuk padding ke dalam ukuran kolom */
+}
+
+/* Pastikan kontainer tidak overflow */
+.timeline {
+    overflow: hidden; /* Agar elemen anak tidak keluar dari kontainer */
+}

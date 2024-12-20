@@ -1,0 +1,42 @@
+/* custom-cursor.css */
+.cursor {
+    position: fixed;
+    border-radius: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+
+.cursor-small {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(0, 242, 255);
+}
+
+.cursor-medium {
+    width: 20px;
+    height: 20px;
+    border: 5px solid rgb(120, 217, 230);
+}
+
+/* Partikel */
+.particle {
+    position: fixed;
+    width: 6px;
+    height: 5px;
+    background-color: rgb(0, 242, 255);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: particle-fade 0.9s forwards;
+    pointer-events: none;
+    z-index: 9998;
+}
+
+
+@keyframes particle-fade {
+    to {
+        transform: translate(var(--x), var(--y));
+        opacity: 0;
+    }
+}

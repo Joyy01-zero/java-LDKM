@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEJARAH</title>
+    <link rel="stylesheet" href="cursoranjayyy.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <style>
+      html,
+      body {
+        overflow-x: hidden; /* Hapus scroll horizontal */
+      }
+      
+      @media (max-width: 768px) {
+  #deskripsi {
+    padding: 10px; /* Kurangi padding di layar kecil */
+    margin: 0 auto; /* Pastikan tetap berada di tengah */
+    max-width: 90%; /* Batasi lebar maksimal */
+    text-align: center; /* Atur teks rata tengah */
+    overflow-wrap: break-word; /* Bungkus teks panjang */
+  }
+
+  #deskripsi p {
+    font-size: 0.9rem; /* Kecilkan ukuran teks pada layar kecil */
+    line-height: 1.4; /* Sesuaikan jarak antar baris */
+  }
+}
+
+
+      .nav-link {
+        transition: all 0.3s ease; /* Efek transisi yang halus */
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        transform: scale(1.05); /* Membesar 10% dan bergeser 5px ke kanan */
+        font-weight: bold; /* Menebalkan teks */
+        color: #ffffff; /* Warna teks */
+      }
+
+      .navbar-brand img {
+        max-height: 40px;
+        width: auto;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #0a0e17;
+        color: #fff;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Hero Section */
+      #beranda {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: 0 5%;
+        background-color: #0a0e17;
+      }
+
+      /* Ukuran Font untuk Judul Lebih Besar */
+      .big-title {
+        font-size: 6rem; /* Ukuran font lebih besar dari h1 default */
+        font-weight: bold; /* Bikin tebal */
+        color: #ffffff; /* Warna putih */
+        margin: 0; /* Hilangkan margin default */
+        text-transform: uppercase; /* Huruf kapital semua */
+        text-align: left; /* Rata kiri */
+        line-height: 1.2; /* Mengatur jarak antar baris */
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #0a0e17;
+        color: #fff;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Hero Section (ganti #beranda jadi #hero) */
+      #hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: 0 5%;
+        padding: 100px 5% 0;
+        background-color: #0a0e17;
+      }
+
+      /* Teks di Kiri */
+      .beranda-content {
+        /* Ganti .content jadi .beranda-content */
+        flex: 1;
+        max-width: 45%;
+        text-align: left;
+        animation: fadeInLeft 1.7s ease-out;
+      }
+
+      .beranda-content h1 {
+        /* Ganti .content h1 jadi .beranda-content h1 */
+        font-size: 3rem;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .beranda-content p {
+        /* Ganti .content p jadi .beranda-content p */
+        font-size: 1.2rem;
+        color: #c0c0c0;
+        margin-bottom: 20px;
+      }
+
+      .beranda-btn {
+        /* Ganti .btn jadi .beranda-btn */
+        background-color: #ff4a4a00;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: 0.3s ease;
+      }
+
+      .beranda-btn:hover {
+        /* Ganti .btn:hover jadi .beranda-btn:hover */
+        background-color: #1f3fc4;
+        transform: scale(1.05);
+      }
+
+      /* Gambar di Kanan */
+      .beranda-image-container {
+        /* Ganti .image-container jadi .beranda-image-container */
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        animation: fadeInRight 1.7s ease-out;
+      }
+
+      .beranda-image-container img {
+        /* Ganti .image-container img jadi .beranda-image-container img */
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 50px;
+      }
+
+      .timeline-item p {
+    background-color: rgba(23, 144, 204, 0.5); /* Latar belakang semi-transparan hitam */
+    padding: 10px; /* Tambahkan jarak antara teks dan latar belakang */
+    border-radius: 12px; /* Memberikan efek sudut melengkung */
+    color: white; /* Teks putih agar mudah dibaca */
+}
+
+
+      /* Animasi Keyframes */
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        #hero {
+          flex-direction: column;
+          text-align: center;
+        }
+        .beranda-content,
+        .beranda-image-container {
+          max-width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .section {
+          padding: 30px; /* Kurangi padding di layar kecil */
+        }
+
+        .content {
+          max-width: 90%; /* Buat lebar mengikuti ukuran layar */
+        }
+
+        h1 {
+          font-size: 2rem; /* Kecilkan ukuran heading */
+        }
+
+        p {
+          font-size: 0.9rem; /* Kecilkan ukuran paragraf */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .section {
+          padding: 20px; /* Lebih kecil untuk layar smartphone */
+        }
+
+        h1 {
+          font-size: 1.8rem; /* Heading lebih kecil */
+        }
+
+        p {
+          font-size: 0.85rem; /* Ukuran font lebih kecil */
+        }
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        overflow-x: hidden;
+        cursor: none;
+        background-color: #000000;
+        color: white;
+      }
+
+      .section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+        padding: 50px;
+      }
+
+      .content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      #deskripsi {
+        margin-bottom: 200px;
+      }
+
+      #deskripsi {
+        background-color: rgb(0, 0, 0);
+      }
+
+      #latar {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      #latar .video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      #latar .video-bg video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 70%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        background-color: rgb(0, 0, 0);
+      }
+      #latar {
+        margin-top: 100px;
+        position: relative;
+        z-index: 0;
+      }
+
+  
+  .rog-slogan {
+    font-family: Verdana, sans-serif; /* Font modern bawaan */
+    color: #1eb8ff;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      #hero
+      {
+        background: url("gambar/asus-rog-8k-amoled-7680x4320-15686.png")
+          no-repeat center center/cover;
+      }
+
+      #timeline {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 170vh;
+      }
+
+      #galeri {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+      }
+
+      #timeline {
+        position: relative;
+        z-index: 100;
+      }
+
+      #timeline {
+        background-color: #000000;
+      }
+
+      #latar {
+        margin-top: 50px;
+      }
+
+      .img-fluid {
+        width: 8cm; /* Lebar gambar jadi 5 cm */
+        height: auto;
+        object-fit: cover;
+      }
+
+      #galeri img {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      #tentang {
+        padding: 60px 0;
+        margin-top: 50px;
+      }
+
+      .carousel-item img {
+  object-fit: cover; /* Sesuaikan ukuran gambar */
+  height: 500px; /* Atur tinggi gambar sesuai kebutuhan */
+  width: 100%; /* Pastikan gambar memenuhi lebar slide */
+}
+
+.carousel-inner {
+  height: 500px; /* Sesuaikan tinggi slide carousel */
+}
+
+.carousel-item img {
+  max-height: 100%; 
+  width: auto;
+  margin: auto; /* Tengahin gambar kalau ada area kosong */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparansi untuk teks */
+  padding: 15px; /* Jarak di dalam caption */
+  border-radius: 10px; /* Bikin pinggirannya lebih smooth */
+}
+
+
+
+
+      @media (max-width: 760px) {
+        #timeline {
+          height: auto; /* Atur tinggi jadi otomatis */
+          padding-top: 50px; /* Kurangi padding bagian atas */
+          padding-bottom: 50px; /* Kurangi padding bagian bawah */
+          margin-bottom: 0; /* Hilangkan margin besar di bawah */
+        }
+
+        .timeline-item {
+          margin: 20px 0; /* Kurangi margin antar item */
+        }
+
+        .timeline-item .row {
+          flex-direction: column; /* Ubah ke layout kolom */
+          text-align: center; /* Atur teks jadi rata tengah */
+        }
+
+        .timeline-item img {
+          max-width: 100%; /* Atur gambar biar responsif */
+          height: auto; /* Pastikan proporsi gambar tetap */
+        }
+      }
+
+      .carousel {
+        width: 100%;
+        height: auto;
+      }
+
+      .carousel-item img {
+        object-fit: cover;
+        max-height: 500px;
+      }
+
+      footer {
+        background: #111;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      footer a {
+        color: #1da1f2;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example"
+    data-bs-offset="50"
+    tabindex="0"
+  >
+    <!-- Navbar -->
+    <nav
+      id="navbar-example"
+      class="navbar navbar-expand-lg navbar-dark bg-Secondary"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="gambar/pngwing.com.png"
+            alt="ASUS Logo"
+            style="max-height: 70px; width: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#deskripsi">Sejarah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#timeline">Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#latar">Latar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeri">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang</a>
+            </li>
+            <!-- Ditempatkan di akhir -->
+          </ul>
+          <!-- Search -->
+          <form
+            class="d-flex ms-auto"
+            style="background: rgba(255, 255, 255, 0.249); border-radius: 15px"
+          >
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="background: transparent; border: none; color: white"
+            />
+            <button
+              class="btn btn-outline-light"
+              type="submit"
+              style="border: none"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Spinner -->
+    <div
+      id="spinner"
+      class="text-center"
+      style="
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2000;
+      "
+    >
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Sections -->
+    <div id="hero" class="beranda" data-aos="fade-up">
+      <!-- Ganti #beranda jadi #hero dan class .section jadi .beranda -->
+      <!-- Teks di Kiri -->
+      <div class="beranda-content" data-aos="fade-left">
+        <!-- Ganti .content jadi .beranda-content -->
+        <h1>HOME</h1>
+        <p>
+          Selamat datang di perjalanan sejarah ASUS! Temukan inovasi, prestasi,
+          dan warisan teknologi dari merek terkemuka dunia
+        </p>
+        <a
+          href="https://www.asus.com/id/laptops/for-gaming/rog-republic-of-gamers/"
+        >
+          <button class="beranda-btn">Shop</button>
+          <!-- Ganti .btn jadi .beranda-btn -->
+        </a>
+      </div>
+
+      <!-- Gambar di Kanan -->
+      <div class="beranda-image-container" data-aos="fade-right">
+        <!-- Ganti .image-container jadi .beranda-image-container -->
+        <img src="gambar/pngwing.com.png" alt="Gambar Animasi" />
+      </div>
+    </div>
+
+    <div id="deskripsi" class="section" data-aos="fade-up">
+      <div class="content">
+        <h1>Sejarah ASUS</h1>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <h3>1989</h3>
+            <p>
+              ASUS adalah perusahaan teknologi asal Taiwan yang didirikan pada
+              tahun 1989 oleh empat insinyur komputer: T.H. Tung, Ted Hsu, Wayne
+              Hsieh, dan M.T. Liao. Sebelum mendirikan ASUS, mereka bekerja di
+              Acer sebagai insinyur perangkat keras. Nama "ASUS" terinspirasi
+              dari kata "Pegasus," kuda bersayap dalam mitologi Yunani yang
+              melambangkan kebijaksanaan dan pengetahuan. Dengan menghilangkan
+              tiga huruf pertama, terciptalah nama "ASUS" yang unik. Sejak awal,
+              ASUS berfokus pada pengembangan motherboard dan komponen komputer
+              berkualitas tinggi. Produk pertama mereka, motherboard Cache
+              386/33 dan ISA 486/25, sukses besar dan digunakan oleh perusahaan
+              terkemuka seperti IBM dan ALR.
+              <a href="https://id.wikipedia.org/wiki/Asus" class="btn btn-primary">Kunjungi Website ASUS</a>
+            </p>
+          </div>
+          <div class="timeline-item" data-aos="fade-left">
+            <h3>2013</h3>
+            <p>
+              Di Indonesia, ASUS telah menjadi merek notebook terkemuka. Pada
+              tahun 2013, ASUS memimpin pasar dengan menguasai 35,1% pangsa
+              pasar Indonesia. Selama periode 2013 hingga 2023, ASUS menerima
+              penghargaan sebagai Merek Notebook No. 1 di Indonesia, yang
+              menunjukkan popularitas dan kepercayaan konsumen terhadap produk
+              mereka.
+              <a
+                href="https://kumparan.com/info-produk/asus-produk-mana-ini-sejarah-dan-penghargaannya-23HKgjcNj6o"
+                class="btn btn-primary">Kunjungi Website ASUS</a
+              >
+            </p>
+          </div>
+          <div class="timeline-item" data-aos="fade-right">
+            <h3>2024</h3>
+            <p>
+              Pada tahun 2024, ASUS terus berinovasi dengan memperkenalkan
+              rangkaian laptop terbaru yang berbasis kecerdasan buatan (AI) dan
+              dilengkapi dengan teknologi Neural Processing Unit (NPU) mutakhir.
+              Produk-produk ini diperkenalkan dalam acara "Consumer PC, Media &
+              Blogger Roadshow" di berbagai kota di Indonesia, termasuk Bandung
+              dan Surabaya.
+              <a
+                href="https://selamethariadi.com/laptop-asus-terbaru-2024-berbasis-ai-dengan-teknologi-npu-mutakhir/" class="btn btn-primary">Kunjungi Website ASUS</a>
+    
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="timeline" class="section">
+      <div class="content">
+        <h1>Timeline Sejarah Asus</h1>
+        <div class="timeline">
+          <!-- Timeline Item 1989 -->
+          <div class="timeline-item" data-aos="fade-right">
+            <h3>1989</h3>
+            <p>
+              Asus didirikan oleh T.H. Tung, Ted Hsu, Wayne Hsieh, dan M.T.
+              Liao.
+            </p>
+            <div class="row">
+              <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                <img
+                  src="pendiri/童子賢副召集人 - Copy.png"
+                  class="img-fluid rounded shadow-sm"
+                  alt="T.H. Tung"
+                />
+                <p><strong>T.H. Tung</strong></p>
+              </div>
+              <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                <img
+                  src="pendiri/images.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Ted Hsu"
+                />
+                <p><strong>Ted Hsu</strong></p>
+              </div>
+              <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                <img
+                  src="pendiri/e8ukx3yrhzs3iibhmbsl.webp"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Wayne Hsieh"
+                />
+                <p><strong>Wayne Hsieh</strong></p>
+              </div>
+              <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+                <img
+                  src="pendiri/rezspnokvyvxwvtfs3if.webp"
+                  class="img-fluid rounded shadow-sm"
+                  alt="M.T. Liao"
+                />
+                <p><strong>M.T. Liao</strong></p>
+              </div>
+            </div>
+          </div>
+          <!-- Timeline Item 2006 -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="row align-items-center">
+              <div class="col-md-9">
+                <h3>2006</h3>
+                <p>
+                  Memperkenalkan seri ROG pertama untuk gaming, yang menjadi
+                  titik awal bagi dominasi ASUS di industri gaming global.Pada
+                  2006, ASUS mulai lebih fokus pada inovasi di berbagai kategori
+                  produk, mulai dari motherboard dan kartu grafis hingga laptop
+                  dan perangkat mobile. ASUS menjadi dikenal karena kualitas dan
+                  inovasi produknya yang selalu mendahului tren pasar, seperti
+                  menggunakan teknologi terbaru di motherboard untuk mendukung
+                  kebutuhan pengguna, baik untuk gaming, multimedia, maupun
+                  komputasi sehari-hari.
+                </p>
+              </div>
+              <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                <img
+                  src="pendiri/1513882457293.webp"
+                  class="img-fluid rounded shadow-sm"
+                  alt="ROG 2006"
+                />
+                <p>
+                  <strong
+                    >ROG menjadi simbol inovasi dan kualitas ASUS, membedakannya
+                    dari pesaing lain di pasar teknologi.</strong
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Timeline Item 2013 -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="row align-items-center">
+              <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                <img
+                  src="pendiri/v3dbyfl8jjjlkyy8.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Asus Zenbook"
+                />
+                <p><strong>ZenBook 2013</strong></p>
+              </div>
+              <div class="col-md-9">
+                <h3>2013</h3>
+                <p>
+                  Melalui ZenBook, ASUS menunjukkan kemampuan untuk terus
+                  mendorong batas desain dan teknologi di pasar laptop premium.
+                  ZenBook pada 2013 menekankan dua hal utama: portabilitas dan
+                  kinerja. Dengan ketebalan tipis, ZenBook tetap mempertahankan
+                  performa yang solid untuk berbagai keperluan multitasking dan
+                  hiburan ringan, bahkan untuk penggunaan media berat dan
+                  pekerjaan grafis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Timeline Item 2020 -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="row align-items-center">
+              <div class="col-md-9">
+                <h3>2020</h3>
+                <p>
+                  ASUS terus mendominasi pasar gaming melalui ROG, menjadi
+                  sponsor banyak turnamen e-sport dan tim profesional di seluruh
+                  dunia.Pada 2020, ASUS melalui ROG benar-benar mengukuhkan diri
+                  sebagai pemimpin di pasar gaming global. Dengan menjadi
+                  sponsor berbagai turnamen e-sports besar, bekerja sama dengan
+                  tim profesional, dan terus meluncurkan perangkat inovatif,
+                  ASUS menjaga dominasi mereka dalam dunia gaming, baik di level
+                  amatir maupun profesional.
+                </p>
+              </div>
+              <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                <img
+                  src="pendiri/ROG-Strix-G15-Advantage-Edition.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Asus ROG 2020"
+                />
+                <p><strong>ROG 2020</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="latar" class="section" data-aos="fade-up">
+      <div class="video-bg">
+        <video autoplay muted loop>
+          <source src="gambar/videoplayback.webm" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="content">
+        
+        <p class="rog-slogan">"Born to Lead, Built to Conquer"</p>
+      </div>      
+    </div>
+
+    <div id="galeri" class="section" data-aos="fade-up">
+      <div class="content">
+        <h1>Galeri Produk</h1>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="gambar/h732 (1).png"
+              class="img-fluid"
+              alt="Asus ROG Laptop"
+            />
+            <h3>Asus ROG</h3>
+            <p>Laptop gaming dengan performa tinggi.</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="gambar/download.png"
+              class="img-fluid"
+              alt="Asus Zenbook"
+            />
+            <h3>Asus Zenbook</h3>
+            <p>Ultrabook premium dengan desain elegan.</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <img
+              src="gambar/06-fx506_l_1_-removebg-preview.png"
+              class="img-fluid"
+              alt="Asus TUF Gaming"
+            />
+            <h3>Asus TUF Gaming</h3>
+            <p>Laptop gaming dengan daya tahan ekstra.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tentang" class="section" data-aos="fade-up">
+      <div id="carouselTentang" class="carousel slide" data-bs-ride="carousel">
+        <div class="content">
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselTentang"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide Java"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselTentang"
+              data-bs-slide-to="1"
+              aria-label="Slide NVIDIA"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselTentang"
+              data-bs-slide-to="2"
+              aria-label="Slide Soldier"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselTentang"
+              data-bs-slide-to="3"
+              aria-label="Slide Tech Evolution"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselTentang"
+              data-bs-slide-to="4"
+              aria-label="Slide ASUS Journey"
+            ></button>
+          </div>
+          <!-- Carousel Inner -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="instruktor/Desain_tanpa_judul__1_-removebg-preview.png"
+                class="d-block w-100"
+                alt="Java Logo"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>MUHAMMD PRATAMA RIZKY</h5>
+                <p>
+                 I.2410095
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="instruktor/Desain_tanpa_judul-removebg-preview.png"
+                class="d-block w-100"
+                alt="NVIDIA Logo"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>IRMAN PRASETIYA MAULIDINA</h5>
+                <p>
+                  I.2410014
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="instruktor/adjusted_image_3x2_2.png"
+                class="d-block w-100"
+                alt="Soldier Silhouette"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>M NOFAL SYAHWALUDIN</h5>
+                <p>
+                  I.2410354
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="instruktor/adjusted_image_3x2_1.png"
+                class="d-block w-100"
+                alt="Tech Evolution"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>ANGGUN RAHMADANI</h5>
+                <p>
+                  I. 2410480
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="instruktor/adjusted_image_3x2.png"
+                class="d-block w-100"
+                alt="ASUS Journey"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>SIGIT ADITYA SAPUTRA</h5>
+                <p>
+                  I.2410437
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselTentang"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselTentang"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <footer>
+      <p>
+        &copy; 2024 SEJARAH - Sejarah Asus. JAVA.
+      </p>
+      <p>ANGGUN RAHMADANI - I. 2410480</p>
+      <p>IRMAN PRASETIYA MAULIDINA -  I.2410014</p>
+      <p>SIGIT ADITYA SAPUTRA -  I.2410437</p>
+      <p>M NOFAL SYAHWALUDIN - I.2410354</p>
+      <p>MUHAMMD PRATAMA RIZKY - I.2410095</p>
+      <p>
+        Follow us on: <a href="#">Twitter</a> | <a href="#">Facebook</a> |
+        <a href="#">LinkedIn</a>
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="Cursor.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="smoothscrl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const spinner = document.getElementById("spinner");
+        spinner.style.display = "none"; // biar ilang loadinganyaa
+      });
+    </script>
+  </body>
+</html>
